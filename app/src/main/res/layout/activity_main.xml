@@ -66,7 +66,7 @@
             android:layout_marginStart="10dp"
             app:endIconMode="clear_text"
             android:layout_marginTop="10dp"
-            android:hint="Email">
+            android:hint="@string/email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailEditText"
@@ -87,7 +87,7 @@
             android:layout_marginStart="10dp"
             app:endIconMode="clear_text"
             android:layout_marginTop="10dp"
-            android:hint="Date">
+            android:hint="@string/date">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/dateEditText"
@@ -106,7 +106,7 @@
             android:layout_marginStart="10dp"
             app:endIconMode="clear_text"
             android:layout_marginTop="10dp"
-            android:hint="Complaint Status">
+            android:hint="@string/complaint_status">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/complaintStatusEditText"
@@ -125,7 +125,7 @@
             android:layout_marginStart="10dp"
             app:endIconMode="clear_text"
             android:layout_marginTop="10dp"
-            android:hint="Father/RWA/Establishment">
+            android:hint="@string/father_rwa_establishment">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/fatherEditText"
@@ -145,7 +145,7 @@
             android:layout_marginStart="10dp"
             app:endIconMode="clear_text"
             android:layout_marginTop="10dp"
-            android:hint="Plot/House No">
+            android:hint="@string/plot_house_no">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/plotNoEditText"
@@ -165,7 +165,7 @@
             android:layout_marginStart="10dp"
             app:endIconMode="clear_text"
             android:layout_marginTop="10dp"
-            android:hint="Floor">
+            android:hint="@string/floor">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/floorEditText"
@@ -186,7 +186,7 @@
             android:layout_marginStart="10dp"
             app:endIconMode="clear_text"
             android:layout_marginTop="10dp"
-            android:hint="Society/Building Name">
+            android:hint="@string/society_building_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/buildingNameEditText"
@@ -210,7 +210,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:inputType="none"
-                android:text="Delhi" />
+                android:text="@string/complaint_type" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -229,7 +229,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:inputType="none"
-                android:text="English" />
+                android:text="@string/complaintsub_type" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -248,12 +248,72 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:inputType="none"
-                android:text="Planet" />
+                android:text="@string/khand_sector" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customerComplaintNameInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="10dp"
+            android:hint="@string/customer_complaint_details">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customerComplaintEditText"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/actionTakenInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:counterEnabled="true"
+            android:layout_marginStart="10dp"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="10dp"
+            android:hint="@string/action_taken_by_control_room">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/actionTakenEditText"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/new_complaint"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/save_complaint"/>
+        </LinearLayout>
     </LinearLayout>
+
+
 </androidx.core.widget.NestedScrollView>
