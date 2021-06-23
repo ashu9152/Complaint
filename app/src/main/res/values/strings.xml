@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Complaint</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+
+    <string-array name="City">
+        <item>Mumbai</item>
+        <item>Delhi</item>
+        <item>Chennai</item>
+        <item>Imphal</item>
+    </string-array>
+
+    <string-array name="Language">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marathi</item>
+        <item>Tamil</item>
+    </string-array>
+
+    <string-array name="PLanets">
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Venus</item>
+        <item>Jupiter</item>
+    </string-array>
+
+
+
+</resources>
