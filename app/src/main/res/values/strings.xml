@@ -5,7 +5,7 @@
     <string name="email">Email</string>
     <string name="date">Date</string>
     <string name="complaint_status">Complaint Status</string>
-    <string name="father_rwa_establishment">Father/RWA/Establishment</string>
+    <string name="father_rwa_establishment">Father name</string>
     <string name="plot_house_no">Plot/House No</string>
     <string name="floor">Floor</string>
     <string name="society_building_name">Society/Building Name</string>
@@ -16,6 +16,7 @@
     <string name="action_taken_by_control_room">Action Taken By Control Room</string>
     <string name="new_complaint">New Complaint</string>
     <string name="save_complaint">Save Complaint</string>
+    <string name="locality">Locality</string>
 
     <string-array name="City">
         <item>Mumbai</item>
